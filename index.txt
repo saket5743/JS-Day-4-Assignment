@@ -1,0 +1,128 @@
+Q1. Create the Example for Logical Operators.
+Ans. AND Operator
+     let a = 10
+     let b = 20
+     if(a % 2 == 0 && b % 2 == 0){
+        console.log('even number')
+     }else{
+        console.log('odd number')
+     }
+
+     OR Operator
+     if(a%2 == 0 || b%2==0){
+        console.log('even number')
+     }else{
+        console.log('odd number')
+     }
+
+
+     Q2. Difference between “ == “ and “ === “ operators.
+     Ans. The "==" operator performs type coercion before making the comparison. This means that if the operands have different types, JavaScript will try to convert one or both of them to a common type and then compare their values.
+     If the values are equal after type coercion, the "==" operator returns true; otherwise, it returns false.
+
+     eg: let x = 5;
+         let y = "5";
+
+    if (x == y) {
+    console.log("Equal");
+    } else {
+    console.log("Not Equal");
+    }
+// Output: Equal (because of type coercion, y is converted to a number)
+
+    eg: let x = 5;
+    let y = "5";
+
+    if (x === y) {
+    console.log("Equal");
+    } else {
+    console.log("Not Equal");
+    }
+// Output: Not Equal (because types are different)
+
+
+Q3. How many operators do we have in JS ?
+Ans. There are different kind of operators in js:
+
+Arithmetic Operators:
+
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+% (Modulus)
+++ (Increment)
+-- (Decrement)
+
+Assignment Operators:
+
+= (Assignment)
++= (Add and assign)
+-= (Subtract and assign)
+*= (Multiply and assign)
+/= (Divide and assign)
+%= (Modulus and assign)
+
+Comparison Operators:
+
+== (Equal to, with type coercion)
+=== (Strict equal to, without type coercion)
+!= (Not equal to, with type coercion)
+!== (Strict not equal to, without type coercion)
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+
+Logical Operators:
+
+&& (Logical AND)
+|| (Logical OR)
+! (Logical NOT)
+
+Bitwise Operators:
+
+& (Bitwise AND)
+| (Bitwise OR)
+^ (Bitwise XOR)
+~ (Bitwise NOT)
+<< (Left shift)
+>> (Right shift)
+>>> (Unsigned right shift)
+
+Unary Operators:
+
++ (Unary plus)
+- (Unary minus)
+++ (Increment)
+-- (Decrement)
+! (Logical NOT)
+
+Conditional (Ternary) Operator:
+
+? : (Conditional)
+
+Typeof Operator:
+
+typeof (Returns a string indicating the type of an operand)
+Instanceof Operator:
+
+Q4. What is use of parseInt in js?
+Ans. The parseInt function in JavaScript is used to parse a string and convert it into an integer. It takes two parameters: the string to be converted, and an optional radix (base) that represents the numeral system to be used (e.g., base 10 for decimal numbers).
+
+eg: let str1 = "123";
+    let str2 = "456.78";
+
+let num1 = parseInt(str1);
+let num2 = parseInt(str2);
+
+console.log(num1); // Output: 123
+console.log(num2); // Output: 456
+
+Q5. Take input from user and find the odd and even number.
+Ans. let user = parseInt(prompt('Enter a number'))
+     if(user % 2 == 0){
+        console.log('Even Number')
+     }else{
+        console.log('Odd number')
+     }
